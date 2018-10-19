@@ -1,0 +1,258 @@
+/* ================================= */
+/* Global Values =================== */
+/* ================================= */
+
+* {
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+}
+
+header {
+  background: darkorange;
+  height: 80px;
+  align-items: center;
+}
+
+h1 {
+  color: white;
+  width: 100%;
+  text-align: center;
+  font-family: 'Merriweather', serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 1.25em;
+}
+
+h2,
+.legend {
+  color: #333333;
+  font-family: 'Merriweather', serif;
+  font-weight: 600;
+  font-size: 1.25em;
+}
+
+form {
+  border-top: 2px solid #333333;
+}
+
+fieldset {
+  border-bottom: 2px solid #333333;
+  margin-top: 30px;
+  padding-bottom: 30px;
+}
+
+hr {
+  border: 1px solid #333333;
+}
+
+/* Layout Styles =================== */
+
+.wrapper {
+  margin: auto;
+  padding: 1em;
+}
+
+.masthead {
+  text-align: center;
+  border-bottom: 4px solid #333333;
+  margin-bottom: 2px;
+  padding-bottom: 20px;
+}
+
+.masthead p {
+  color: #8a97a0;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-weight: 400;
+}
+
+.submit {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.shortened {
+  flex-basis: 30%;
+  display: inline-flex;
+  max-width: 250px;
+}
+
+/* Form Styles ===================== */
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+textarea,
+select {
+  background: rgba(255,255,255,0.1);
+  border: 2px solid #e8eeef;
+  border-radius: 4px;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 100%;
+  background-color: #e8eeef;
+  color: #8a97a0;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+}
+
+.selector {
+  height: 52px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 0 8px 8px 0;
+  display: inline;
+}
+
+textarea {
+  height: 100px;
+}
+
+legend {
+  margin-bottom: 20px;
+}
+
+.submit {
+  display: flex;
+  flex-direction: column;
+}
+
+.submit button {
+  background: #42cf6c;
+  height: 52px;
+  
+  border-radius: 5px;
+  border: 1px solid #3ac162;
+  border-width: 1px 1px 3px;
+  box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+
+  color: white;
+  text-align: center;
+  font-family: 'Merriweather', serif;
+  font-weight: 600;
+  font-size: 1.25em;
+}
+
+.submit button:hover {
+  cursor: pointer;
+  background: #51dd7b;
+}
+
+.submit p {
+  text-align: center;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  color: #8a97a0;
+  font-size: 1em;
+  padding-bottom: 8px;
+  display: block;
+}
+
+.formfield,
+.checkfield {
+  margin-bottom: 30px;
+}
+
+.formfield label {
+  align-self: center;
+}
+
+.formlabel {
+  color: #8a97a0;
+  font-family: 'Merriweather', serif;
+  font-size: 1em;
+  font-weight: 400;
+  padding-bottom: 8px;
+  display: block;
+}
+
+.checklabel {
+  color: #8a97a0;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  padding-bottom: 8px;
+}
+
+.ziplabel {
+  max-width: 160px;
+}
+
+input:focus,
+textarea:focus {
+  border: 2px solid darkorange;
+  background: #e8eeef;
+  transition: ease .8s;
+}
+
+::placeholder {
+  text-align: right;
+  color: #8a97a0;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: .9em;
+  font-weight: 300;
+  padding-bottom: 8px;
+  font-style: italic;
+}
+
+.primary,
+.secondary {
+  border: none;
+}
+
+/* ================================= */
+/* Media Queries =================== */
+/* ================================= */
+
+/* 768 Breakpoint ================== */
+
+@media (min-width: 769px) {
+  
+  .wrapper {
+    max-width: 768px;
+  }
+
+  .masthead {
+    margin-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .formfield {
+    display: flex;
+    align-content: center;
+  }
+
+  .formfield label {
+    flex-basis: 30%;
+  }
+
+  .checkfield {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .primary .formlabel {
+    padding-bottom: 0;
+  }
+
+}
